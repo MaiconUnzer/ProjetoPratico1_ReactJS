@@ -1,0 +1,1 @@
+Containers se preocupam com as ações, ou seja, como o sistema age/se comporta.

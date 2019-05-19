@@ -1,0 +1,196 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+
+$button-color: white;
+$button-background-color: #50C878;
+%button{
+  @extend .btn;
+  color: $button-color;
+  background-color: $button-background-color;
+  box-shadow: unset !important;
+  text-align: center;
+
+  &:focus,&:active,&:hover{
+    background-color: $button-background-color !important;
+    box-shadow: 3px 3px 3px 3px rgba($color: $button-background-color, $alpha: 0.3) !important;
+    color: $button-color;
+  }
+
+  i.material-icons{
+    color: $button-color;
+  }
+}
+
+form{
+  padding: {
+    top: 40px;
+  }
+}
+
+.app-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  color: #fff;
+  height:60px;
+  background-color: #50C878;
+  z-index: 200;
+}
+
+.navigation-bar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width:275px;
+  color: #50C878;
+  background-color: #50C878;
+  display: none;
+  box-shadow: 5px 0 rgba($color: #50C878, $alpha: 0.3);
+  z-index: 250;
+
+  &--open{
+    display: block;
+  }
+ 
+}
+
+.menu-item{
+  @extend %button;
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: {
+    top: 10px;
+    left: 15px;
+    bottom: 10px;
+  };
+  
+  &:hover{
+    cursor: pointer;
+    color: $button-color;
+    background: {
+      color: rgba($color: rgb(7, 121, 16), $alpha: 0.2) !important;
+    };
+  }
+  
+}
+
+.title-bar{
+  padding-left: 50px;
+  vertical-align: middle;
+}
+
+.button-menu{
+  @extend %button;
+  margin: {
+    left: 10px;
+    top: 10px;
+  }
+}
+
+.button-close{
+  @extend %button;
+  width:100%;
+  margin-left:unset;
+
+  i.material-icons{
+    float: right;
+  }
+}
+
+.main{
+  padding: {
+    top: 60px;
+    right: 50px;
+    left: 50px;
+  }
+}
+
+.main-option-title{
+  border-bottom: 1px solid;
+  padding-top: 40px;
+  width: 100%;
+  border-bottom: 4px solid rgba(0, 0, 0, 0.125);
+}
+
+.main-option{
+
+  a{
+    @extend %button;
+    margin-top: 20px;
+    max-width: 200px;
+  }
+}
+
+input {
+  margin: {
+    top: 20px;
+  }
+}
+
+button{
+  @extend .btn;
+  margin: {
+    top: 10px;
+  }
+}
+
+.btn-add-primary{
+  @extend %button;
+  margin-left: auto;
+  border: unset;
+}
+
+.list-group{
+  padding: {
+    top: 30px;
+  };
+  width: 100%;
+  
+}
+
+.form-add-options{
+  display: inline-flex;
+
+  input{
+    width: 30%;
+  }
+  
+}
+
+.list-group-item{
+  button{
+    float: right;
+    margin: {
+      top: unset;
+      left:5px;
+    }
+  }
+  span{
+    vertical-align: middle;
+  }
+  input{
+    position: absolute;
+    width: 30%;
+    margin: {
+      top: unset
+    }
+  }
+}
+
+
+.form-add-ico{
+  position: absolute;
+  top: 86px;
+  width: 100%;
+  margin-left: -85px;
+
+  button{
+    float: right;
+  }
+
+  i{
+    font-size: 45px;
+  }
+}

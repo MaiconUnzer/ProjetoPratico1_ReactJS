@@ -1,0 +1,1 @@
+Componentes se preocupam com a apresentação.
