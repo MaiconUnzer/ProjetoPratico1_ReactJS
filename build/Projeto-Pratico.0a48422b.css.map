@@ -1,1 +1,0 @@
-{"version":3,"sources":["index.scss"],"names":[],"mappings":"AACA,SACE,cAAA,CACA,KAAA,CACA,MAAA,CACA,OAAA,CACA,UAAA,CACA,WAAA,CACA","file":"Projeto-Pratico.0a48422b.css","sourceRoot":"..","sourcesContent":["\r\n.app-bar {\r\n  position: fixed;\r\n  top: 0;\r\n  left: 0;\r\n  right: 0;\r\n  color: #fff;\r\n  height:60px;\r\n  background-color: black;\r\n}\r\n"]}
